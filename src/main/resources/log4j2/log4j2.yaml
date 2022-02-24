@@ -1,0 +1,31 @@
+Configuration:
+  name: Default
+  status: warn
+  debug: true
+
+  Properties:
+    Property:
+      - name: color-filter
+        value: FATAL=Bright red, ERROR=Bright red, WARN=Yellow, INFO=Green, DEBUG=Cyan, TRACE=White
+      - name: log-pattern-console
+        value: "%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight{[%-5level]%throwable}{${color-filter}} [%t{1.}] %style{%c{1.}}{MAGENTA} (%F:%L) - %msg%n"
+
+  Appenders:
+    Console:
+      name: CONSOLE
+      target: SYSTEM_OUT
+      PatternLayout:
+        pattern: ${log-pattern-console}
+
+  Loggers:
+    Root:
+        level: debug
+        additivity: false
+        AppenderRef:
+          - ref: CONSOLE
+
+    Logger:
+      - name: com.breeze
+        level: debug
+      - name: org.hibernate.type.descriptor.sql.BasicBinder
+        level: trace

@@ -1,4 +1,4 @@
-package com.breeze.sample;
+package com.breeze;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

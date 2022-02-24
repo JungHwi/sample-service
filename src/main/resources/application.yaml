@@ -1,0 +1,25 @@
+server:
+  port: 20010
+
+spring:
+  application:
+    name: sample-service
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/sample?useUnicode=true&characterEncoding=utf8&verifyServerCertificate=false&useSSL=false&allowMultiQueries=true&autoReconnect=true&serverTimezone=Asia/Seoul
+      username: admin
+      password: admin123
+      write:
+        jdbc-url: jdbc:mysql://localhost:3306/sample?useUnicode=true&characterEncoding=utf8&verifyServerCertificate=false&useSSL=false&allowMultiQueries=true&autoReconnect=true&serverTimezone=Asia/Seoul
+        username: admin
+        password: admin123
+      read:
+        jdbc-url: jdbc:mysql://localhost:3306/sample?useUnicode=true&characterEncoding=utf8&verifyServerCertificate=false&useSSL=false&allowMultiQueries=true&autoReconnect=true&serverTimezone=Asia/Seoul
+        username: admin
+        password: admin123
+
+logging:
+  config: classpath:log4j2/log4j2.yaml

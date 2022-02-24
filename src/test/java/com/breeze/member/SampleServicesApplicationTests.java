@@ -1,4 +1,4 @@
-package com.breeze.sample;
+package com.breeze.member;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
