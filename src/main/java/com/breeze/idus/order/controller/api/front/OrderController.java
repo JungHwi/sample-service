@@ -1,6 +1,5 @@
 package com.breeze.idus.order.controller.api.front;
 
-import com.breeze.core.auth.AuthToken;
 import com.breeze.core.wrapper.ResultResponse;
 import com.breeze.idus.order.controller.model.OrderModel;
 import com.breeze.idus.order.converter.OrderConverter;

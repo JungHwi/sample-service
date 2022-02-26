@@ -24,7 +24,7 @@ public class OrderModel {
     @ApiModelProperty("상품명")
     private String productName;
 
-    @ApiModelProperty("주문일시")
+    @ApiModelProperty(value = "주문일시", example = LOCAL_DATE_TIME_FORMAT)
     @JsonFormat(pattern = LOCAL_DATE_TIME_FORMAT)
     private LocalDateTime createdAt;
     

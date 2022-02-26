@@ -1,6 +1,5 @@
 package com.breeze.idus.user.controller.api.front;
 
-import com.breeze.core.auth.AuthToken;
 import com.breeze.core.wrapper.ResultResponse;
 import com.breeze.idus.user.controller.model.UserModel;
 import com.breeze.idus.user.controller.model.request.UserRequest;

@@ -2,8 +2,6 @@ package com.breeze.idus.user.controller.api.admin;
 
 import com.breeze.core.wrapper.PageContents;
 import com.breeze.core.wrapper.ResultResponse;
-import com.breeze.idus.order.service.vo.Order;
-import com.breeze.idus.user.controller.model.UserModel;
 import com.breeze.idus.user.controller.model.UserOrderModel;
 import com.breeze.idus.user.controller.model.request.UserRequest;
 import com.breeze.idus.user.converter.UserConverter;
